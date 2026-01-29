@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q5 - Income Tax Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="header">
+        <h1>Q5: Income Tax Calculator</h1>
+        <p>Simple India-style slab demo + cess. (You can change slabs in <code>script.js</code>.)</p>
+      </header>
+
+      <section class="card">
+        <div class="grid">
+          <label>
+            Assessment year
+            <select id="ay">
+              <option value="2020-21">2020-21</option>
+              <option value="2021-22">2021-22</option>
+              <option value="2022-23">2022-23</option>
+              <option value="2023-24" selected>2023-24</option>
+              <option value="2024-25">2024-25</option>
+            </select>
+          </label>
+
+          <label>
+            Tax payer
+            <select id="payer">
+              <option value="individual" selected>Individual</option>
+            </select>
+          </label>
+
+          <label>
+            Category
+            <select id="category">
+              <option value="general" selected>General</option>
+              <option value="senior">Senior Citizen (60+)</option>
+              <option value="super_senior">Super Senior (80+)</option>
+            </select>
+          </label>
+
+          <label>
+            Residential status
+            <select id="res">
+              <option value="resident" selected>Resident</option>
+              <option value="non_resident">Non-Resident</option>
+            </select>
+          </label>
+
+          <label class="full">
+            Net taxable income (₹)
+            <input id="income" type="number" min="0" step="1" placeholder="e.g. 850000" />
+          </label>
+        </div>
+
+        <div class="actions">
+          <button id="calcBtn" type="button">Calculate</button>
+          <button id="resetBtn" type="button" class="secondary">Reset</button>
+          <span id="msg" class="msg" role="status" aria-live="polite"></span>
+        </div>
+
+        <div class="result">
+          <h2>Your tax computation</h2>
+          <div class="rows">
+            <div class="row">
+              <span>Income Tax</span>
+              <span id="tax" class="val">₹0</span>
+            </div>
+            <div class="row">
+              <span>Surcharge</span>
+              <span id="surcharge" class="val">₹0</span>
+            </div>
+            <div class="row">
+              <span>Health &amp; Education Cess @ 4%</span>
+              <span id="cess" class="val">₹0</span>
+            </div>
+            <div class="row total">
+              <span>Total Tax Liability</span>
+              <span id="total" class="val">₹0</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+

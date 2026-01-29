@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q4 - 6x6 Sudoku Solver</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="header">
+        <h1>Q4: 6×6 Sudoku Solver</h1>
+        <p>Rules: Fill 1–6 so each row, column, and each 2×3 box has all numbers 1–6.</p>
+      </header>
+
+      <section class="panel">
+        <div id="grid" class="grid" aria-label="6x6 Sudoku grid"></div>
+
+        <div class="actions">
+          <button id="solveBtn" type="button">Solve</button>
+          <button id="clearBtn" type="button" class="secondary">Clear</button>
+          <button id="sampleBtn" type="button" class="secondary">Load sample</button>
+          <span id="msg" class="msg" role="status" aria-live="polite"></span>
+        </div>
+      </section>
+
+      <footer class="footer">
+        Tip: Click a cell and type 1–6. Use Backspace/Delete to clear a cell.
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+

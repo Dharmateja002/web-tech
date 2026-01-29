@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, 70px);
+  grid-template-rows: repeat(6, 70px);
+  gap: 8px;
+}
+
+/* Common square style */
+.box {
+  width: 70px;
+  height: 70px;
+}
+
+/* Color palette (matched to image) */
+.c1 {
+  background-color: #ff7a1a;   /* bright orange */
+}
+
+.c2 {
+  background-color: #ffbf8a;   /* light peach */
+}
+
+.c3 {
+  background-color: #a55200;   /* dark brown-orange */
+}

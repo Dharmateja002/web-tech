@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q2 - HTML5 Drag & Drop</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="header">
+        <h1>Q2: HTML5 Drag &amp; Drop</h1>
+        <p>Drag the cards between the columns. Reordering inside a column is supported.</p>
+      </header>
+
+      <section class="board" aria-label="Drag and drop board">
+        <div class="col" data-col="todo" aria-label="To do">
+          <h2>To do</h2>
+          <div class="dropzone" data-dropzone>
+            <article class="card" draggable="true" data-id="1">WT Lab assignment</article>
+            <article class="card" draggable="true" data-id="2">Finish calculator UI</article>
+            <article class="card" draggable="true" data-id="3">Solve Sudoku</article>
+          </div>
+        </div>
+
+        <div class="col" data-col="doing" aria-label="Doing">
+          <h2>Doing</h2>
+          <div class="dropzone" data-dropzone>
+            <article class="card" draggable="true" data-id="4">Drag &amp; Drop demo</article>
+          </div>
+        </div>
+
+        <div class="col" data-col="done" aria-label="Done">
+          <h2>Done</h2>
+          <div class="dropzone" data-dropzone>
+            <article class="card" draggable="true" data-id="5">Pattern (Q1)</article>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <button id="resetBtn" type="button">Reset sample cards</button>
+        <span id="status" class="status" role="status" aria-live="polite"></span>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+

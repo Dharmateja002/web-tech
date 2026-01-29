@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q3 - Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="wrap">
+      <section class="calc" aria-label="Calculator">
+        <div class="display" role="status" aria-live="polite">
+          <div id="expr" class="expr"></div>
+          <input id="out" class="out" value="0" inputmode="decimal" aria-label="Display" readonly />
+        </div>
+
+        <div class="keys" role="group" aria-label="Calculator keys">
+          <button class="key key--fn" data-action="paren-open">(</button>
+          <button class="key key--fn" data-action="ce">CE</button>
+          <button class="key key--fn" data-action="paren-close">)</button>
+          <button class="key key--danger" data-action="c">C</button>
+
+          <button class="key" data-num="1">1</button>
+          <button class="key" data-num="2">2</button>
+          <button class="key" data-num="3">3</button>
+          <button class="key key--op" data-op="+">+</button>
+
+          <button class="key" data-num="4">4</button>
+          <button class="key" data-num="5">5</button>
+          <button class="key" data-num="6">6</button>
+          <button class="key key--op" data-op="-">−</button>
+
+          <button class="key" data-num="7">7</button>
+          <button class="key" data-num="8">8</button>
+          <button class="key" data-num="9">9</button>
+          <button class="key key--op" data-op="*">×</button>
+
+          <button class="key" data-action="dot">.</button>
+          <button class="key" data-num="0">0</button>
+          <button class="key key--eq" data-action="equals">=</button>
+          <button class="key key--op" data-op="/">÷</button>
+        </div>
+      </section>
+
+      <aside class="help">
+        <h1>Q3: Calculator</h1>
+        <ul>
+          <li><b>CE</b> clears the current entry</li>
+          <li><b>C</b> clears everything</li>
+          <li>Keyboard: digits, <b>+ - * /</b>, <b>Enter</b>=, <b>Backspace</b>=CE, <b>Esc</b>=C</li>
+        </ul>
+      </aside>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
