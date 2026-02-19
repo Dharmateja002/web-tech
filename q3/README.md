@@ -6,5 +6,5 @@
 ## Keys
 - `CE`: clears current entry
 - `C`: clears all
-- `=`: evaluates the expression
+- `=`: evaluates the expression.
 
