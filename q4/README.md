@@ -5,5 +5,5 @@
 
 ## Notes
 - Uses backtracking to solve
-- Validates row/column and 2×3 sub-grid rules
+- Validates row/column and 2×3 sub-grid rules.
 
