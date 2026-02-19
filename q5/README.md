@@ -5,5 +5,5 @@
 
 ## Notes
 - Slabs are configurable inside `script.js`
-- Computes: base tax + surcharge (demo tiers) + 4% cess
+- Computes: base tax + surcharge (demo tiers) + 4% cess.
 
