@@ -5,5 +5,5 @@
 
 ## What it demonstrates
 - Drag cards between columns
-- Reorder cards within the same column
+- Reorder cards within the same column.
 
